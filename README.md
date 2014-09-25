@@ -3,6 +3,8 @@ single-source-truth
 
 Sample Ember application that shows how to enrich the Router DSL in order to be more explicit, descriptive and powerful.
 
+* [Preview Link](http://single-source-truth.herokuapp.com)
+
 This README outlines the details of collaborating on this Ember application.
 
 A short introduction of this app could easily go here.
@@ -52,4 +54,5 @@ Specify what it takes to deploy your app.
   * [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
   * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
 
->>>>>>> Initial Commit from Ember CLI v0.0.46
+Ember CLI v0.0.46
+
