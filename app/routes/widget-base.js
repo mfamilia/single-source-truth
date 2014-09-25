@@ -13,10 +13,5 @@ export default Ember.Route.extend({
       'model': widgetMeta,
       'widget': model
     });
-  },
-  actions: {
-    updatePreview: function(name, payload) {
-      this.controller.send('updatePreview', name, payload);
-    }
   }
 });
