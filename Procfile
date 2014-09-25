@@ -1,1 +1,1 @@
-web: ember serve --environment production --port $PORT
+web: ./node_modules/grunt-cli/bin/grunt expressServer:dist:keepalive
