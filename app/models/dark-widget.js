@@ -4,7 +4,7 @@ var DarkWidget = Widget.extend({});
 
 DarkWidget.reopenClass({
   FIXTURES: [
-    { id: 2, name: 'Darkness rules' }
+    { id: 3, name: 'Darkness rules' }
   ]
 });
 
