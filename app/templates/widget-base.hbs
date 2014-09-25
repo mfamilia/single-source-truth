@@ -1,3 +1,12 @@
-<div>
-  {{render "widget-navigation"}}
+<div class="container-fluid">
+  <div class="row">
+    {{render "widget-navigation"}}
+    <div class="col-xs-12 col-md-8 clearfix">
+      <div class="section-container">
+        <div class="section-form">
+        {{outlet}}
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
