@@ -1,0 +1,121 @@
+@left-nav-collapsed-width: 50px;
+@left-nav-expanded-width: 200px;
+@left-nav-active-bar-width: 5px;
+
+.left-nav {
+  @left-nav-bg: #45494D;
+  @left-nav-item-border-color: #6A6D71;
+  @left-nav-text-color: #D3D3D3;
+  @left-nav-selected-color: #009DD6;
+
+  width: @left-nav-expanded-width;
+  top: 0;
+  bottom: -1px;
+  background-color: @left-nav-bg;
+  overflow-y:auto;
+  overflow-x:hidden;
+  z-index: 1;
+  border-radius: 2px;
+
+  .widget-name {
+    color: #009dd6;
+    font-size: 16px;
+    padding-left: 10px;
+  }
+
+  header {
+    padding: 10px;
+    border-bottom: 1px solid @left-nav-item-border-color;
+    white-space: nowrap;
+    overflow: hidden;
+    color: @left-nav-text-color;
+  }
+
+  ol {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    li {
+      color: #666;
+      white-space: nowrap;
+      position: relative;
+      border-bottom: 1px solid @left-nav-item-border-color;
+
+      a {
+        position: relative;
+        display: block;
+        padding: 0 10px 0 45px;
+        line-height: 35px;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        color: @left-nav-text-color;
+
+        .icon {
+          position: absolute;
+          width: 20px;
+          top: 0;
+          bottom: 0;
+          left: 15px;
+          background-repeat: no-repeat;
+          background-position: 0 center;
+          background-size: 20px;
+          opacity: 0.6;
+        }
+
+        &:hover {
+          text-decoration: none;
+          color: white;
+          background-color: darken(@left-nav-bg, 5%);
+
+          .icon {
+            opacity: 1;
+          }
+        }
+
+        &:focus {
+          text-decoration: none;
+          outline: none;
+        }
+
+        &.active {
+          color: white;
+          border-left: @left-nav-active-bar-width solid @left-nav-selected-color;
+          padding-left: 45px - @left-nav-active-bar-width;
+
+          .icon {
+            opacity: 1;
+            left: 15px - @left-nav-active-bar-width;
+          }
+        }
+      }
+
+      &.sub-nav {
+        border-bottom: none;
+
+        li.activity-item a {
+          padding-left: 15px;
+          padding-right: 40px;
+
+          &.active {
+            padding-left: 15px - @left-nav-active-bar-width;
+          }
+        }
+      }
+
+      &.heading {
+        text-align: left;
+        padding: 0 15px;
+        color: @left-nav-text-color;
+        border-bottom: 1px solid @left-nav-item-border-color;
+        text-transform: uppercase;
+        font-size: 12px;
+        line-height: 24px;
+      }
+
+      &.section-action a {
+        cursor: pointer;
+      }
+    }
+  }
+}

@@ -1,0 +1,13 @@
+<header class="clearfix">
+  <div class="widget-name">{{widget.name}}</div>
+</header>
+<ol class="sections-nav">
+  {{#each section in sections}}
+    <li {{bind-attr class=":section section.slug"}}>
+      {{#link-to section.routeName}}
+        <span class="icon"></span>
+        {{section.label}}
+      {{/link-to}}
+    </li>
+  {{/each}}
+</ol>

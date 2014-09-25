@@ -1,0 +1,14 @@
+{{#if hasTypes }}
+  <ul id="widget-types" class="clearfix">
+    {{#each}}
+      <li {{action createWidget this}}>
+        <div class="icon-container">
+          <div {{bind-attr class=":icon name"}}></div>
+        </div>
+        <div class="name">
+          <p>{{displayName}}</p>
+        </div>
+      </li>
+    {{/each}}
+  </ul>
+{{/if}}
