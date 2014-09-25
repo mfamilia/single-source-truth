@@ -19,8 +19,8 @@
   "author": "",
   "license": "MIT",
   "devDependencies": {
-    "bootstrap": "~3.1.1",
     "body-parser": "^1.2.0",
+    "bower": "~1.3.11",
     "broccoli-asset-rev": "0.1.1",
     "broccoli-ember-hbs-template-compiler": "^1.6.1",
     "broccoli-less-single": "^0.1.4",
@@ -33,8 +33,8 @@
     "glob": "^4.0.5"
   },
   "dependencies": {
-    "bootstrap": "~3.1.1",
     "body-parser": "^1.2.0",
+    "bower": "~1.3.11",
     "broccoli-asset-rev": "0.1.1",
     "broccoli-ember-hbs-template-compiler": "^1.6.1",
     "broccoli-less-single": "^0.1.4",
